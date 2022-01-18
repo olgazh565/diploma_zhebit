@@ -1,0 +1,27 @@
+include ../mixins/catalog-card
+
+.container.catalog 
+    h4.catalog__link К мероприятиям
+    h2.catalog__tagline Настоящая красота здесь! 
+    .catalog__menu 
+        button.catalog__item
+            span СВАДЬБА
+        button.catalog__item
+            span МУЖУ
+        button.catalog__item
+            span ЖЕНЕ
+        button.catalog__item
+            span ПАРТЕНРУ
+        button.catalog__item
+            span КОЛЛЕКЦИИ
+        button.catalog__item
+            span РЕДКОСТЬ
+
+    .catalog__galery 
+       +catalog-card('./assets/imgs/rings.png','КОЛЬЦА')
+       +catalog-card('./assets/imgs/earings.png','СЕРЬГИ')
+       +catalog-card('./assets/imgs/pendant.png','ПОДВЕСКИ')
+       +catalog-card('./assets/imgs/studs.png','ЗАПОНКИ')
+       +catalog-card('./assets/imgs/brasletts.png','БРАСЛЕТЫ')
+       +catalog-card('./assets/imgs/watches.png','ЧАСЫ')
+

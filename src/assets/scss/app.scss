@@ -1,3 +1,10 @@
-html{
-    background: blue;
-}
+// основные стили
+@import "./main/stylesheet.scss";
+@import "./main/reset.scss";
+@import "./main/main.scss";
+
+// стили компонентов
+@import "./components/section1.scss";
+@import "./components/catalog.scss";
+@import "./components/catalog-card.scss";
+@import "./components/middle.scss";

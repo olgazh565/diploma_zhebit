@@ -1,0 +1,34 @@
+.background{
+    background: url("../imgs/blackbgd1.png") center/cover no-repeat;
+}
+.salons{
+    text-align: center;
+
+    &__question{
+        color: $secondary-color;
+        font-size: 21px;
+        padding-top: 50px;
+        padding-bottom: 25px;
+
+    }
+    &__tagline{
+        font-family: $secondary-font;
+        color: $secondary-color;
+        font-size: 30px;
+        font-weight: bold;
+
+    }
+    &__text{
+        color: $secondary-color;
+        padding: 0 185px;
+
+    }
+    &__button{
+        padding: 15px 35px;
+        background-color: #FFFFFF;
+        border: 1 solid #333333; 
+        color: $primary-color;     
+
+
+    }
+}

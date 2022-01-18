@@ -1,0 +1,19 @@
+@import "../main/vars.scss";
+
+.catalog__card{
+    position: relative;
+    text-align: center;
+}
+.catalog__img{
+    // filter: drop-shadow(rgba(51, 51, 51, 0.87));
+    filter: grayscale(rgba(51, 51, 51, 0.87));
+    // Fill: Linear Gradient (rgba(0, 0, 0, 0.25));
+}
+.catalog__text{
+    position: absolute;
+    font-size: 24px;
+    color: $secondary-color;
+    bottom: 20px;
+    right: 120px;
+    
+}
