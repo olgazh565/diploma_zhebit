@@ -1,0 +1,45 @@
+@import "../main/vars.scss";
+
+.blog__card{
+    display: inline-block;
+    max-width: 31.5%;
+    flex: 1 0 31.5%;
+    flex-wrap: wrap;
+    position: relative; 
+    margin-right: 10px;
+    margin-left: 10px;
+
+    &img{
+        display: block;
+    }
+
+}
+.blog__card img{
+    display: block;
+}
+.blog__card:first-child{
+    // margin-left: 0x;
+}
+.blog__card:last-child{
+    // margin-right: 0;
+}
+
+.blog__card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(180, 180, 180, 0) 0%, #333333 100%);
+}
+.blog__text{
+    font-family: $primary-font;
+    font-size: 21px;
+    color: $secondary-color;
+    position: absolute;
+    bottom: 40px;
+    padding: 0 70px;
+    line-height: 140%;
+
+}

@@ -4,7 +4,7 @@ html{
     font-family: $primary-font;
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;  
+    // font-weight: 400;  
     background-color: #F9F9F9;  
     color: $primary-color;
 }
@@ -19,5 +19,11 @@ a{
 button{
     outline: none;
     cursor: pointer;
+}
+img{
+    max-width: 100%;
+}
+h4{
+    font-weight: normal;
 }
 

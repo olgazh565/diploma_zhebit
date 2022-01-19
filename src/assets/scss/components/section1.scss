@@ -1,22 +1,19 @@
 @import "../main/vars.scss";
 
 .header{
-    background: url("../imgs/bgc01.jpg") center/cover no-repeat;
-    // max-height: 950px; 
-    height: 100%;
-    // filter: drop-shadow(rgba(51, 51, 51, 0.87));
-    // filter: grayscale(rgba(51, 51, 51, 0.87));
+    background: linear-gradient(0deg, rgba(51, 51, 51, 0.87), rgba(51, 51, 51, 0.87)), url(../imgs/bgc01.jpg);
+    background-size: cover; 
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
     
-
-
     &__row{
         display: flex;
         justify-content: space-between;
         align-items: center;
         font-size: 14px;
-        margin-bottom: 520px;       
+        // margin-bottom: 520px;       
         padding-top: 20px;
-
     }
     &__links{
        display: flex;
@@ -26,6 +23,9 @@
        
        a{
             color: $secondary-color;
+       }
+       a:hover{
+        font-size: 15px;
        }
     }
     &__logo{
@@ -72,13 +72,27 @@
        color: $secondary-color;
        font-size: 14px;
     }
+    &__button:hover{
+        background: $secondary-color;
+        color: $primary-color;
+        font-weight: bold;
+
+    }
+    .container{
+        width: 100%;
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
 }
+
 .slogan{
     text-align: center;
     font-family: $secondary-font;
     font-size: 36px;
     color: $secondary-color;
-
+    margin-top: auto;
 }
 .slogan__button{
     display: block;
@@ -90,25 +104,39 @@
     color: $secondary-color;
     font-size: 18px;
     margin-top: 50px;
-    margin-bottom: 110px;
+    margin-bottom: 80px;
+}
+.slogan__button:hover{
+    background: $secondary-color;
+    color: $primary-color;
+    font-weight: bold;
+    border: 1px solid $primary-color;
 
 }
 .brands{
+    border-top: 1px solid $secondary-color; 
+    margin-top: auto;    
+}
+.brands__row{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
+    padding-top: 30px;      
+    
 }
 .brands__img{
     position: relative;
-    }
+}
 
-.brands__img::after{
+.brands__img:after{
     content: "";
-    // border-right: 1px solid $secondary-color;
-    height: 90px;
+    height: 60px;
     width: 2px;
     position: absolute;
     background: $secondary-color;
-    right: 30px;
-    // bottom: 5px;  
-    }
+    right: -15px;    
+}
+
+.brands__img:last-child:after{
+    display: none;
+}
