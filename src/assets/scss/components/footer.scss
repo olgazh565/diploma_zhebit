@@ -1,1 +1,112 @@
 @import "../main/vars.scss";
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-top: 80px;
+
+    &__column{
+    display: flex;
+    flex-direction: column;
+    max-width: 23%;
+    flex: 1 0 23%;
+    align-items: stretch;
+    text-align: left;          
+    }   
+}
+.column__title{
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $primary-color;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.column__link{
+    font-family: $primary-font;
+    font-size: 14px;
+    color: $primary-color;
+    line-height: 220%;
+}
+.column__link:hover{
+    font-weight: bold;
+}
+.column__text{
+    font-size: 14px;
+    line-height: 150%;
+}
+.column__cards{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.column__payment{
+    max-width: 13%;        
+    margin-right: 10px;
+}
+.column__contact{
+    font-family: $primary-font;
+    font-size: 14px;
+    color: $primary-color;
+    line-height: 230%;
+    position: relative;
+    padding-left: 45px;
+}
+.column__contact:hover{
+    font-weight: bold;
+}
+.column__contact::before{
+    content: url('../imgs/phone.svg');
+    position: absolute;
+    left: 10px;
+    top: 2px;
+}
+.column__contact:last-child:before{
+    content: url('../imgs/letter.svg');
+    position: absolute;
+    left: 10px;
+    top: 2px;
+}
+.footer__media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    max-width: 80%;
+    
+}
+.column__medialink img{
+    transition: transform 0.4 ease;
+}
+.column__medialink:hover{
+    transform: scale(1.5);
+}
+.footer__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    font-family: $primary-font;
+    font-size: 14px;
+    border-top: 1px solid $primary-color;
+    padding-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    & a{
+        color: $primary-color;        
+    }
+    & a:hover{
+        font-weight: bold;
+    }
+    & a:last-child{
+        font-weight: bold;
+        text-decoration: underline;
+    }
+    & a:last-child:hover{
+        color: red;
+    }
+}
+
+

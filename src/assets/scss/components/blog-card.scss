@@ -7,22 +7,11 @@
     flex-wrap: wrap;
     position: relative; 
     margin-right: 10px;
-    margin-left: 10px;
-
-    &img{
-        display: block;
-    }
-
+    margin-left: 10px;   
 }
 .blog__card img{
     display: block;
-}
-.blog__card:first-child{
-    // margin-left: 0x;
-}
-.blog__card:last-child{
-    // margin-right: 0;
-}
+    max-width: 100%;}
 
 .blog__card::before{
     content: "";
@@ -41,5 +30,7 @@
     bottom: 40px;
     padding: 0 70px;
     line-height: 140%;
-
+}
+.blog__card:hover{
+    opacity: 0.5;
 }

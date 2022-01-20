@@ -13,7 +13,7 @@
         background-image: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333333 100%), url(.jpg);
     }
     &:hover{
-        border: 2px solid $primary-color;
+        opacity: 0.5;
     }
 }
 .catalog__img{
@@ -25,6 +25,5 @@
     color: $secondary-color;
     bottom: 30px;
     right: 50%;
-    transform: translateX(50%);
-    
+    transform: translateX(50%);    
 }

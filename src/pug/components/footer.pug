@@ -1,33 +1,41 @@
 .container 
     .footer 
         .footer__column 
-            h4 
-            p 
-            p 
-            p 
-            p 
+            h4.column__title полезные ссылки
+            a(href="#").column__link Доставка
+            a(href="#").column__link Оплата 
+            a(href="#").column__link Акции
+            a(href="#").column__link Политика конфиденциальности
         .footer__column 
-            h4 
-            img(src="", alt="")
-            img(src="", alt="")
+            h4.column__title оплата
+            p.column__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
+            .column__cards 
+                img.column__payment(src="./assets/imgs/visa.svg", alt="visa")
+                img.column__payment(src="./assets/imgs/mastercard.svg", alt="mastercard")
         .footer__column 
-            h4 
-            p 
-            p 
-            p 
+            h4.column__title контакты                
+            a.column__contact(href="tel: 8 (812) 234-56-55") 8 (812) 234-56-55
+            a.column__contact(href="tel: 8 (812) 234-56-55") 8 (812) 234-56-55
+            a.column__contact(href="mailto: ojjo@ojjo.ru") ojjo@ojjo.ru
         .footer__column 
-            h4 
-            p 
-            .footer_media 
-                img(src="", alt="")
-                img(src="", alt="")
-                img(src="", alt="")
-                img(src="", alt="")
-                img(src="", alt="")
+            h4.column__title социальные сети
+            p.column__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ullamcorper justo, nec, pellentesque.
+            .footer__media 
+                a(href="https://www.youtube.com"  target="_blank").column__medialink
+                    img(src="./assets/imgs/youtube.svg", alt="youtube")
+                a(href="https://vk.com"  target="_blank").column__medialink
+                    img(src="./assets/imgs/vk.svg", alt="vk")
+                a(href="https://www.facebook.com"  target="_blank").column__medialink
+                    img(src="./assets/imgs/facebook.svg", alt="facebook")
+                a(href="https://telegram.com"  target="_blank").column__medialink
+                    img(src="./assets/imgs/telegram.svg", alt="telegram")
+                a(href="#"  target="_blank").column__medialink
+                    img(src="./assets/imgs/e.svg", alt="e")
     .footer__bottom 
-        p 
-        p 
-        p 
-        p
+        p (c) 2020 OJJO jewelry
+        a(href="#")  Договор публичной офферты
+        a(href="#")  Контрагентам
+        a(href="http://figma.info" target="_blank")  Сделано Figma.info
+         
 
 

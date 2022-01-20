@@ -18,15 +18,16 @@
     &__links{
        display: flex;
        justify-content: space-between;
+       align-items: center;
        max-width: 29%;
        flex: 1 0 29%;
        
        a{
             color: $secondary-color;
-       }
+        }
        a:hover{
-        font-size: 15px;
-       }
+            font-weight: bold;
+        }
     }
     &__logo{
        max-width: 40%;
@@ -60,7 +61,6 @@
     }   
     &__search{
         position: absolute;
-        // top: 8px;
         right: 65px;    
         cursor: pointer;
         border: none;        
@@ -73,10 +73,13 @@
        font-size: 14px;
     }
     &__button:hover{
-        background: $secondary-color;
-        color: $primary-color;
         font-weight: bold;
-
+    }
+    &__profile:hover{
+        transform: scale(1.5);
+    }
+    &__favorites:hover{
+        transform: scale(1.5);
     }
     .container{
         width: 100%;
@@ -84,7 +87,6 @@
         display: flex;
         flex-direction: column;
     }
-
 }
 
 .slogan{
