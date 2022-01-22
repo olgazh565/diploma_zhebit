@@ -35,9 +35,7 @@
         font-weight: bold;
     }
     &__button:hover{
-        background-color: $primary-color;
-        border: 1 solid $secondary-color; 
-        color: $secondary-color;   
+        background: #f2f2f2f2;
 
     }
 }
