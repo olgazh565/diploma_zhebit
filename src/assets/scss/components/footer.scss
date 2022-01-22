@@ -24,11 +24,35 @@
     font-weight: 500;
     margin-bottom: 15px;
 }
+@media(max-width: 991px){
+    .column__title{
+        font-size: 14px;
+        margin-bottom: 15px;         
+    }
+}
+@media(max-width: 575px){
+    .column__title{
+        font-size: 12px;  
+        margin-bottom: 15px;         
+    }
+}
 .column__link{
     font-family: $primary-font;
     font-size: 14px;
     color: $primary-color;
     line-height: 220%;
+}
+@media(max-width: 991px){
+    .column__link{
+        font-size: 12px;
+        line-height: 190%;
+    }
+}
+@media(max-width: 575px){
+    .column__link{
+        font-size: 10px;
+        line-height: 170%;       
+    }
 }
 .column__link:hover{
     font-weight: bold;
@@ -37,14 +61,38 @@
     font-size: 14px;
     line-height: 150%;
 }
+@media(max-width: 991px){
+    .column__text{
+        font-size: 12px;
+        line-height: 150%;
+    }
+}
+@media(max-width: 575px){
+    .column__text{
+        font-size: 10px;
+        line-height: 150%;       
+    }
+}
 .column__cards{
     display: flex;
     align-items: center;
     margin-top: 15px;
 }
 .column__payment{
-    max-width: 13%;        
+    max-width: 17%;        
     margin-right: 10px;
+}
+@media(max-width: 991px){
+    .column__payment{
+        font-size: 12px;
+        line-height: 190%;
+    }
+}
+@media(max-width: 575px){
+    .column__payment{
+        font-size: 10px;
+        line-height: 170%;       
+    }
 }
 .column__contact{
     font-family: $primary-font;
@@ -53,6 +101,19 @@
     line-height: 230%;
     position: relative;
     padding-left: 45px;
+}
+@media(max-width: 991px){
+    .column__contact{
+        font-size: 12px;
+        line-height: 190%;
+    }
+}
+@media(max-width: 575px){
+    .column__contact{
+        font-size: 10px;
+        line-height: 170%; 
+        padding-left: 0px;      
+    }
 }
 .column__contact:hover{
     font-weight: bold;
@@ -63,11 +124,21 @@
     left: 10px;
     top: 2px;
 }
+@media(max-width: 575px){
+    .column__contact::before{
+       display: none;      
+    }
+}
 .column__contact:last-child:before{
     content: url('../imgs/letter.svg');
     position: absolute;
     left: 10px;
     top: 2px;
+}
+@media(max-width: 575px){
+    .column__contact::before{
+        display: none;       
+    }
 }
 .footer__media{
     display: flex;
@@ -79,6 +150,16 @@
 }
 .column__medialink img{
     transition: transform 0.4 ease;
+}
+@media(max-width: 991px){
+    .column__medialink img{
+        max-width: 90%;
+    }
+}
+@media(max-width: 575px){
+    .column__medialink img{
+        max-width: 80%;      
+    }
 }
 .column__medialink:hover{
     transform: scale(1.5);
@@ -108,5 +189,14 @@
         color: red;
     }
 }
-
+@media(max-width: 991px){
+    .footer__bottom{
+        font-size: 12px;
+    }
+}
+@media(max-width: 575px){
+    .footer__bottom{
+        font-size: 10px;             
+    }
+}
 

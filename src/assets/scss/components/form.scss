@@ -85,3 +85,119 @@
         background: rgba(51, 51, 51, 0.9);
     }
 }
+@media(max-width: 991px){
+    .form__info{
+        font-size: 18px;
+        padding-top: 60px;
+        padding-bottom: 10px;    
+    }
+}
+@media(max-width: 575px){
+    .form__info{
+        font-size: 16px;
+        padding-top: 30px;
+        padding-bottom: 10px;      
+    }
+}
+@media(max-width: 991px){
+    .form__title{
+        font-size: 25px;
+        padding-bottom: 50px;    
+    }
+}
+@media(max-width: 575px){
+    .form__title{
+        font-size: 18px;
+        padding-bottom: 20px;      
+    }
+}
+@media(max-width: 991px){
+    .form__line{
+        font-size: 16px;
+        padding-left: 40px;
+        line-height: 210%;    
+    }
+}
+@media(max-width: 575px){
+    .form__line{
+        font-size: 14px;
+        padding-left: 40px;
+        line-height: 210%;      
+    }
+}
+@media(max-width: 991px){
+    .form__section{
+        padding-bottom: 80px;
+        max-width: 90%;   
+    }
+}
+@media(max-width: 575px){
+    .form__section{
+        padding-bottom: 60px;
+        max-width: 80%;
+        flex-direction: column;      
+    }
+}
+@media(max-width: 991px){
+    .form__field{
+        padding: 15px 15px;    
+    }
+}
+@media(max-width: 575px){
+    .form__field{
+        padding: 10px 10px;   
+        margin-top: 30px;
+    }
+}
+@media(max-width: 991px){
+    .form__input{
+        padding: 10px 12px 10px 15px;
+        font-size: 14px;
+        margin-right: 10px;      
+    }
+}
+@media(max-width: 575px){
+    .form__input{
+        padding: 10px 12px 10px 15px;
+        font-size: 12px;
+        margin-right: 10px;;   
+    }
+}
+@media(max-width: 991px){
+    .form__button{
+        padding: 10px 25px;
+        font-size: 14px;           
+    }
+}
+@media(max-width: 575px){
+    .form__button{
+        padding: 10px 25px;
+        font-size: 12px;  
+    }
+}
+@media(max-width: 991px){
+    .form__input::placeholder{
+        font-size: 14px;           
+    }
+}
+@media(max-width: 575px){
+    .form__input::placeholder{
+        font-size: 12px;  
+    }
+}
+@media(max-width: 991px){
+    .form__field::after{
+        top: -15px;
+        left: -15px;        
+        width: 107%;
+        height: 140%;;           
+    }
+}
+@media(max-width: 575px){
+    .form__field::after{
+        top: -10px;
+        left: -10px;        
+        width: 105%;
+        height: 130%;;  
+    }
+}
