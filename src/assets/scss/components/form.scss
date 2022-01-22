@@ -134,7 +134,7 @@
 @media(max-width: 575px){
     .form__section{
         padding-bottom: 60px;
-        max-width: 80%;
+        max-width: 90%;
         flex-direction: column;      
     }
 }
@@ -145,7 +145,7 @@
 }
 @media(max-width: 575px){
     .form__field{
-        padding: 10px 10px;   
+        padding: 5px 5px;   
         margin-top: 30px;
     }
 }
@@ -158,9 +158,9 @@
 }
 @media(max-width: 575px){
     .form__input{
-        padding: 10px 12px 10px 15px;
+        padding: 10px 8px 10px 10px;
         font-size: 12px;
-        margin-right: 10px;;   
+        margin-right: 5px;   
     }
 }
 @media(max-width: 991px){
@@ -171,7 +171,7 @@
 }
 @media(max-width: 575px){
     .form__button{
-        padding: 10px 25px;
+        padding: 10px 20px;
         font-size: 12px;  
     }
 }
@@ -197,7 +197,7 @@
     .form__field::after{
         top: -10px;
         left: -10px;        
-        width: 105%;
-        height: 130%;;  
+        width: 106%;
+        height: 140%;;  
     }
 }
