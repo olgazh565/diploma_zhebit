@@ -159,7 +159,7 @@
 @media(max-width: 575px){
     .form__input{
         padding: 10px 0px 10px 0px;
-        font-size: 12px;
+        font-size: 10px;
         margin-right: 5px;   
     }
 }
@@ -172,7 +172,7 @@
 @media(max-width: 575px){
     .form__button{
         padding: 10px 15px;
-        font-size: 12px;  
+        font-size: 10px;  
     }
 }
 @media(max-width: 991px){
@@ -182,7 +182,7 @@
 }
 @media(max-width: 575px){
     .form__input::placeholder{
-        font-size: 12px;  
+        font-size: 10px;  
     }
 }
 @media(max-width: 991px){
