@@ -43,6 +43,9 @@
         top: 2px;   
     }
     &__field{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
         background: $secondary-color;
         padding: 20px 20px;        
         position: relative;
