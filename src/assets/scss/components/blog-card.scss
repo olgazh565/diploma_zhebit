@@ -9,6 +9,13 @@
     margin-right: 10px;
     margin-left: 10px;   
 }
+@media(max-width: 1024px){
+    .blog__card{
+        flex-wrap: nowrap;  
+        margin-right: 5px;
+        margin-left: 5px;   
+    }
+}
 @media(max-width: 991px){
     .blog__card{
         flex-wrap: nowrap;  

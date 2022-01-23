@@ -44,6 +44,11 @@
     justify-content: space-between;
     margin-bottom: 60px;
 }
+@media(max-width: 415px){
+    .catalog__menu{
+        flex-wrap: wrap;     
+    }
+}
 .catalog__item{
     position: relative;
     border: 1px solid #D6D6D6;
@@ -60,7 +65,14 @@
 }
 @media(max-width: 575px){
     .catalog__item{
-        font-size: 14px;              
+        font-size: 14px;                     
+    }
+}
+@media(max-width: 415px){
+    .catalog__item{
+        font-size: 14px; 
+        max-width: 33%;
+        flex: 1 0 33%;             
     }
 }
 .catalog__item span{
