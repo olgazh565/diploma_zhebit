@@ -11,6 +11,17 @@
         color: $secondary-color;
         padding-bottom: 20px;
         padding-top: 100px;
+
+        @media(max-width: 991px){
+            font-size: 18px;
+            padding-top: 60px;
+            padding-bottom: 10px;    
+        }        
+        @media(max-width: 575px){
+            font-size: 16px;
+            padding-top: 30px;
+            padding-bottom: 10px;      
+        }        
     }
     &__title{
         font-family: $secondary-font;
@@ -18,6 +29,15 @@
         font-size: 30px;
         padding-bottom: 60px;
         color: $secondary-color;
+
+        @media(max-width: 991px){
+            font-size: 25px;
+            padding-bottom: 50px;    
+        }
+        @media(max-width: 575px){
+            font-size: 18px;
+            padding-bottom: 20px;      
+        }        
     }
     &__section{
         display: flex;
@@ -26,6 +46,16 @@
         margin: 0 auto;
         padding-bottom: 110px;
         max-width: 70%;
+
+        @media(max-width: 991px){
+            padding-bottom: 80px;
+            max-width: 90%;   
+        }
+        @media(max-width: 575px){
+            padding-bottom: 60px;
+            max-width: 90%;
+            flex-direction: column;      
+        }        
     }
     &__list{
         text-align: left;        
@@ -34,7 +64,18 @@
         color: $secondary-color;
         padding-left: 40px;
         line-height: 210%;
-        position: relative;     
+        position: relative; 
+
+        @media(max-width: 991px){
+            font-size: 16px;
+            padding-left: 40px;
+            line-height: 210%;  
+        }
+        @media(max-width: 575px){
+            font-size: 14px;
+            padding-left: 40px;
+            line-height: 210%;      
+        }            
     }
     &__line::before{
         content: url('../imgs/arrow.svg');
@@ -50,30 +91,74 @@
         padding: 20px 20px;        
         position: relative;
         z-index: 1;
+
+        @media(max-width: 991px){
+            padding: 15px 15px;    
+        }        
+        @media(max-width: 575px){
+            padding: 5px 5px;   
+            margin-top: 30px;
+        }
     }
     &__field::after{
         content: "";
         position: absolute;
         top: -15px;
         left: -15px;        
-        width: 107%;
-        height: 130%;
+        width: calc(100% + 30px);
+        height: calc(100% + 30px);
         border: 1px solid $secondary-color;
         z-index: -1;
-    }
+
+        @media(max-width: 991px){
+            top: -10px;
+            right: -10px; 
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);          
+        }        
+        @media(max-width: 575px){
+            top: -5px;
+            left: -5px; 
+            width: calc(100% + 10px);
+            height: calc(100% + 10px); 
+        }
+        @media(max-width: 426px){
+            left: -5px; 
+            width: calc(100% + 10px);
+            height: calc(100% + 10px);
+        }
+    }    
     &__input{
         padding: 14px 15px 14px 18px;
         border: 1px solid #D6D6D6;
         background: $secondary-color;
         font-size: 14px;
         color: $primary-color;
-        margin-right: 10px;        
+        margin-right: 10px; 
+
+        @media(max-width: 991px){
+            padding: 10px 12px 10px 15px;
+            font-size: 14px;
+            margin-right: 10px;      
+        }        
+        @media(max-width: 575px){            
+            padding: 10px 0px 10px 5px;
+            font-size: 10px;
+            margin-right: 5px;   
+        }              
     }
     &__input::placeholder{
         color: $primary-color;
         text-transform: uppercase;
         background: $secondary-color;
         font-size: 14px;
+
+        @media(max-width: 991px){
+            font-size: 14px;        
+        }
+        @media(max-width: 575px){
+            font-size: 10px;  
+        }        
     }
     &__button{
         padding: 14px 35px;
@@ -83,124 +168,27 @@
         color: $secondary-color;
         font-size: 14px;
         box-sizing: border-box;
+
+        @media(max-width: 991px){
+            padding: 10px 25px;
+            font-size: 14px;           
+        }        
+        @media(max-width: 575px){
+            padding: 10px 15px;
+            font-size: 10px;  
+        }        
     }
     &__button:hover{
         background: rgba(51, 51, 51, 0.9);
     }
 }
-@media(max-width: 991px){
-    .form__info{
-        font-size: 18px;
-        padding-top: 60px;
-        padding-bottom: 10px;    
-    }
-}
-@media(max-width: 575px){
-    .form__info{
-        font-size: 16px;
-        padding-top: 30px;
-        padding-bottom: 10px;      
-    }
-}
-@media(max-width: 991px){
-    .form__title{
-        font-size: 25px;
-        padding-bottom: 50px;    
-    }
-}
-@media(max-width: 575px){
-    .form__title{
-        font-size: 18px;
-        padding-bottom: 20px;      
-    }
-}
-@media(max-width: 991px){
-    .form__line{
-        font-size: 16px;
-        padding-left: 40px;
-        line-height: 210%;    
-    }
-}
-@media(max-width: 575px){
-    .form__line{
-        font-size: 14px;
-        padding-left: 40px;
-        line-height: 210%;      
-    }
-}
-@media(max-width: 991px){
-    .form__section{
-        padding-bottom: 80px;
-        max-width: 90%;   
-    }
-}
-@media(max-width: 575px){
-    .form__section{
-        padding-bottom: 60px;
-        max-width: 90%;
-        flex-direction: column;      
-    }
-}
-@media(max-width: 991px){
-    .form__field{
-        padding: 15px 15px;    
-    }
-}
-@media(max-width: 575px){
-    .form__field{
-        padding: 5px 5px;   
-        margin-top: 30px;
-    }
-}
-@media(max-width: 991px){
-    .form__input{
-        padding: 10px 12px 10px 15px;
-        font-size: 14px;
-        margin-right: 10px;      
-    }
-}
-@media(max-width: 575px){
-    .form__input{
-        padding: 10px 0px 10px 5px;
-        font-size: 10px;
-        margin-right: 5px;   
-    }
-}
-@media(max-width: 991px){
-    .form__button{
-        padding: 10px 25px;
-        font-size: 14px;           
-    }
-}
-@media(max-width: 575px){
-    .form__button{
-        padding: 10px 15px;
-        font-size: 10px;  
-    }
-}
-@media(max-width: 991px){
-    .form__input::placeholder{
-        font-size: 14px;           
-    }
-}
-@media(max-width: 575px){
-    .form__input::placeholder{
-        font-size: 10px;  
-    }
-}
-@media(max-width: 991px){
-    .form__field::after{
-        top: -15px;
-        left: -15px;        
-        width: 107%;
-        height: 140%;;           
-    }
-}
-@media(max-width: 575px){
-    .form__field::after{
-        top: -10px;
-        left: -10px;        
-        width: 106%;
-        height: 140%;;  
-    }
-}
+
+
+
+
+
+
+
+
+
+

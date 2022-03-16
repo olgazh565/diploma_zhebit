@@ -11,21 +11,18 @@ html{
 .container{
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0 15px;   
-}
-@media(max-width: 991px){
-    .container{
-        max-width: 750px;
-        margin: 0 auto;
-        padding: 0 15px;        
-    }
-}
-@media(max-width: 575px){
-    .container{
-        max-width: 500px; 
-        margin: 0 auto;
-        padding: 0 15px;       
-    }
+    padding: 0 15px;  
+
+    @media(max-width: 991px){
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 0 15px;        
+        }
+    @media(max-width: 575px){
+            max-width: 500px; 
+            margin: 0 auto;
+            padding: 0 15px;       
+        }
 }
 a{
     text-decoration: none;

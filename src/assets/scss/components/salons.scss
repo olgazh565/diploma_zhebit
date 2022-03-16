@@ -10,6 +10,13 @@
         padding-top: 100px;
         padding-bottom: 20px;
 
+        @media(max-width: 991px){
+                font-size: 16px;       
+        }
+        @media(max-width: 575px){
+                font-size: 14px;  
+                padding-top: 40px;  
+        }
     }
     &__tagline{
         font-family: $secondary-font;
@@ -18,12 +25,28 @@
         font-weight: bold;
         padding-bottom: 40px;
 
+        @media(max-width: 991px){
+            font-size: 25px;       
+        }
+        @media(max-width: 575px){
+            font-size: 18px;   
+        }
     }
     &__text{
         color: $secondary-color;
         padding: 0 185px;
         line-height: 25px;
 
+        @media(max-width: 991px){
+            font-size: 14px;
+            padding: 0 80px;
+            line-height: 25px;       
+        }        
+        @media(max-width: 575px){
+            font-size: 12px;
+            padding: 0 35px;
+            line-height: 25px;     
+        }
     }
     &__button{
         padding: 15px 42px;
@@ -33,60 +56,25 @@
         margin-top: 60px;  
         margin-bottom: 100px;
         font-weight: bold;
+
+        @media(max-width: 991px){
+            font-size: 14px; 
+            padding: 10px 30px; 
+            margin-top: 60px;  
+            margin-bottom: 100px;     
+        }        
+        @media(max-width: 575px){
+            font-size: 12px;
+            padding: 10px 25px;
+            margin-top: 40px;  
+            margin-bottom: 50px;     
+        }        
     }
     &__button:hover{
         background: #f2f2f2f2;
 
     }
 }
-@media(max-width: 991px){
-    .salons__question{
-        font-size: 16px;       
-    }
-}
-@media(max-width: 575px){
-    .salons__question{
-        font-size: 14px;  
-        padding-top: 40px;   
-    }
-}
-@media(max-width: 991px){
-    .salons__tagline{
-        font-size: 25px;       
-    }
-}
-@media(max-width: 575px){
-    .salons__tagline{
-        font-size: 18px;     
-    }
-}
-@media(max-width: 991px){
-    .salons__text{
-        font-size: 14px;
-        padding: 0 80px;
-        line-height: 25px;       
-    }
-}
-@media(max-width: 575px){
-    .salons__text{
-        font-size: 12px;
-        padding: 0 35px;
-        line-height: 25px;     
-    }
-}
-@media(max-width: 991px){
-    .salons__button{
-        font-size: 14px; 
-        padding: 10px 30px; 
-        margin-top: 60px;  
-        margin-bottom: 100px;     
-    }
-}
-@media(max-width: 575px){
-    .salons__button{
-        font-size: 12px;
-        padding: 10px 25px;
-        margin-top: 40px;  
-        margin-bottom: 50px;     
-    }
-}
+
+
+

@@ -26,14 +26,11 @@
     bottom: 30px;
     right: 50%;
     transform: translateX(50%);    
-}
-@media(max-width: 991px){
-    .catalog__text{
+
+    @media(max-width: 991px){
         font-size: 16px;           
     }
-}
-@media(max-width: 575px){
-    .catalog__text{
+    @media(max-width: 575px){
         font-size: 14px;              
     }
 }
